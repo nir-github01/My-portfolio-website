@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navContainer {
+  width: 100%;
+  height: 80px;
+  position: fixed;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  background: linear-gradient(to bottom, #a3540a, rgb(228, 102, 123));
+  padding: 15px;
+  color: #ffffff;
+}
+.mobilemenunavbox {
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 15px;
+  color: #ffffff;
+  height: 60%;
+  background: linear-gradient(to bottom, #a3540a, rgb(228, 102, 123));
+}
+.nameSign span {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 30px;
+  font-family: "Great vibes";
+  letter-spacing: normal;
+}
+.nameSignature{
+  position: sticky;
+  right: 75%;
+  font-size: 20px;
+  font-family: "Great vibes";
+  font-weight: 700;
+  letter-spacing: normal;
+}
+@media (min-width: 768px) {
+  .navlinkbox {
+    font-size: 16px;
+    padding: 0px;
+    margin: 10px 30px 10px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+  }
+  .mobilemenunavbox{
+    display: none;
+  }
+  .navContainer {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b85f0b;
+    padding: 15px;
+    color: #ffffff;
+  }
+  .nameSign span {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 30px;
+    font-family: "Great vibes";
+  }
+  .mobilemenunavbox{
+    display: none;
+  }
+  .menuBox {
+    position: fixed;
+    z-index: 5;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 768px) {
+  .navlinkbox {
+    display: none;
+  }
+  /* .navContainer{
+    display: none;
+  } */
+   .mobileBox{
+    position: absolute;
+   }
+  .mobilemenunavbox {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: #ffffff;
+    height: 60%;
+    background: linear-gradient(to bottom, #a3540a, rgb(228, 102, 123)) !important;
+  }
+  .threedivmenu{
+    position: fixed;
+    right: 2%;
+    top: 5%;
+    margin: 10px 30px 10px 10px;
+  }
+  .threedivmenu div{
+    margin: 4px;
+    width: 25px;
+    border: 2px solid white;
+  }
+  .twoCrossdiv #div1{
+    margin: 4px;
+    width: 25px;
+    border: 2px solid white;
+    rotate:135deg;
+    position: relative;
+   bottom: 3%;
+  }
+  .twoCrossdiv{
+    position: fixed;
+    right: 5%;
+    bottom: 70%;
+  }
+  .twoCrossdiv #div2{
+    margin: 4px;
+    width: 25px;
+    border: 2px solid white;
+    rotate: 45deg;
+    position: relative;
+    bottom: 7px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.linksclass:hover , .mobileviewnavlinks:hover{
+  padding: 0px;
+  margin: 0px;
+  /* box-shadow: 2px 2px 2px #ecc359; */
+  transition-duration: 50ms;
+  transition-property: background-color color;
+  background-color: #a3540a;
+  padding-bottom: 2px;
+  border-radius: 1vh;
+  border-bottom: 4px solid #04395caf;
+  color: rgb(30, 202, 233);
+  cursor: pointer;
+  scale: 1.1;
 }
+.mobileviewnavlinks{
+  padding: 2px;
+  margin: 2px;
+}
+
