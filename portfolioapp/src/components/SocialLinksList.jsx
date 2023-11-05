@@ -16,7 +16,7 @@ export let socialLinkList = [
   },
 
   {
-    id: 1,
+    id: 2,
     title: "github",
     child: (
       <>
@@ -26,7 +26,7 @@ export let socialLinkList = [
     href: "https://github.com/nir-github01",
   },
   {
-    id: 1,
+    id: 3,
     title: "gmail",
     child: (
       <>
@@ -37,7 +37,7 @@ export let socialLinkList = [
   },
 
   {
-    id: 1,
+    id: 4,
     title: "resume",
     child: (
       <>
@@ -45,5 +45,6 @@ export let socialLinkList = [
       </>
     ),
     href: "./resume.pdf",
+    download:true,
   },
 ];

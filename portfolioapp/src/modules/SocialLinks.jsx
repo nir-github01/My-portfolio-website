@@ -14,6 +14,8 @@ const SocialLinks = () => {
           target="_blank"
           id={sociallink.title}
           className="socialLinksName"
+          download={sociallink.download}
+          rel="noreferrer"
         >
           {sociallink.child}
         </a>

@@ -6,9 +6,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to bottom, #a3540a, rgb(228, 102, 123));
+  background: linear-gradient(to top, rgb(224, 178, 114), rgb(243, 163, 57));
   padding: 15px;
   color: #ffffff;
+  z-index: 10;
 }
 .mobilemenunavbox {
   width: 100%;
@@ -18,7 +19,7 @@
   padding: 15px;
   color: #ffffff;
   height: 60%;
-  background: linear-gradient(to bottom, #a3540a, rgb(228, 102, 123));
+  background: linear-gradient(to bottom, #a3540a, rgb(233, 105, 46));
 }
 .nameSign span {
   font-weight: 700;
@@ -41,7 +42,7 @@
     width: 100%;
     height:110vh;
     margin: 0%;
-    background:linear-gradient(to bottom, rgb(132, 0, 255), rgb(148, 74, 4));
+    background:linear-gradient(to bottom, rgb(252, 241, 229), rgb(247, 249, 250));
   }
 .homeContainer{
   width: 100%;
@@ -73,15 +74,15 @@
 }
 .btnClass{
   display: flex;
-  gap: 20px;
+  gap: 10px;
   font-size: 16px;
   width: fit-content;
-  padding: 5px;
+  padding: 10px 5px 5px 15px;
   border-radius: 1vh;
   color: #ffffff;
   cursor: pointer;
-  margin: 10px;
-  background: linear-gradient(to right, rgb(212, 119, 13), rgb(0, 89, 255));
+  margin: 15px 2px 5px 10px;
+  background: linear-gradient(to right, rgb(248, 154, 46), rgb(131, 50, 4));
 }
 #portfoliobtn:focus-visible, #portfoliobtn:focus-within, #portfoliobtn:focus, #portfoliobtn{
   outline: none;
@@ -91,18 +92,28 @@
   outline-style: none;
 
 }
+#portfoliobtn:hover{
+   scale: 1.1;
+}
 #arrowid{
-  margin-top: 5px;
+  width: 20px;
+  height: 22px;
+  margin:3px 10px 5px -2px;
+}
+#arrowid:hover{
+  transition-duration: 900ms;
+  rotate: 90deg;
 }
 .heading{
   font-size: 20px;
-  color: #ffffff;
-  margin-bottom: 10px;
+  color: rgb(235, 126, 3);
+  margin-bottom: 15px;
+  margin-left: 10px;
   line-height: normal;
 }
 .titleclass{
   font-size: 14px;
-  color: #b8b8b8;
+  color: rgb(36, 79, 104);
   margin: 10px;
   line-height: normal;
 }
@@ -122,7 +133,7 @@
   justify-content: center;
   height: 40px;
   width:130px;
-  margin: 2px 4px 2px -80px;
+  margin: 2px 4px 0px -80px;
   text-align:justify;
   border-top-right-radius:1vh;
   border-bottom-right-radius:1vh;
@@ -147,6 +158,72 @@
   justify-content: space-around;
   gap: 20px;
   padding-right: 10px;
+}
+
+/** Portfolio  */
+.portfolioContatiner{
+  font-size: 16px;
+  color: #ffffff;
+  background:linear-gradient(to left, rgb(109, 55, 5), rgb(14, 105, 121), rgb(95, 50, 7));
+  width:100%;
+  height: max-content;
+}
+.portfolioImg{
+  border: 4px;
+   width: 300px;
+   height: 100px;
+}
+.card{
+  margin: 0px 40px 0px 40px;
+  border-top-right-radius: 2vh;
+  border-top-left-radius: 2vh;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  background:linear-gradient(to right, rgb(124, 41, 8), rgba(83, 80, 243, 0.178), rgb(236, 69, 133), rgb(124, 41, 8))
+}
+.cardImg{
+  border-top-right-radius: 1vh;
+  border-top-left-radius: 1vh;
+  border-top:3px solid rgb(242, 245, 244);
+  margin: 10px 15px 15px 15px;
+}
+.titlehead{
+  font-size: 14px;
+  text-align: center;
+  line-break: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin: 0px 10px 10px 10px;
+}
+.cardBtn{
+  display: flex;
+  border-bottom-right-radius: 2vh;
+  border-bottom-left-radius: 2vh;
+  background:linear-gradient(to top, rgb(94, 7, 112), rgb(124, 41, 8));
+  box-shadow:0px 4px  rgb(217, 103, 240);
+  justify-content: space-evenly;
+
+}
+.dcbtn{
+  text-align: center;
+  border:1px #f1eeeb;
+  outline: 1px #ffffff;
+  padding: 0px 10px 0px 10px;
+  box-shadow: 3px 3px 4px 5px #a3540a;
+  padding: 4px 10px 4px 10px;
+  margin: 10px 10px 20px 10px;
+  border-radius: 1vh;
+
+}
+.portfolioheading{
+  width: fit-content;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px;
+}
+.portfolioheading h1{
+  margin:15px 30px 15px 50px;
+   border-bottom: 4px solid rgb(240, 248, 7);
 }
 
 @media (min-width: 768px) {
@@ -268,20 +345,31 @@
   .imgBox{
     width:25%;
   }
+
+  /** Portfolio */
+
+  .card{
+    margin: 0px 40px 0px 40px;
+    border-top-right-radius: 2vh;
+    border-top-left-radius: 2vh;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    background:linear-gradient(to right, rgb(124, 41, 8), rgba(83, 80, 243, 0.178), rgb(236, 69, 133), rgb(124, 41, 8))
+  }
 }
 
 
 .linksclass:hover , .mobileviewnavlinks:hover{
   padding: 0px;
   margin: 0px;
-  /* box-shadow: 2px 2px 2px #ecc359; */
+  box-shadow: 2px 2px 2px #eca759;
   transition-duration: 50ms;
   transition-property: background-color color;
-  background-color: #a3540a;
+  background-color: #e97407;
   padding-bottom: 2px;
   border-radius: 1vh;
-  border-bottom: 4px solid #04395caf;
-  color: rgb(30, 202, 233);
+  border-bottom: 4px solid #eceae9;
+  color: rgb(5, 16, 31);
   cursor: pointer;
   scale: 1.1;
 }
