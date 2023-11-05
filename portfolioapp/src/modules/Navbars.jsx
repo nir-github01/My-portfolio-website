@@ -1,7 +1,6 @@
 import { navLinks } from "../components/NavLists";
 import { useState, useEffect } from "react";
 // import { Link } from "react-router-dom";
-import "../App.css";
 
 const Navbars = () => {
   const [nav, setNavs] = useState(false);

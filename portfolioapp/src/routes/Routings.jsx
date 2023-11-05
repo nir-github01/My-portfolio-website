@@ -1,10 +1,10 @@
 import React from 'react'
-import Navbars from '../modules/Navbars'
+import Home from '../modules/Home'
 
 const Routings = () => {
   return (
     <div>
-      <Navbars />
+      <Home />
     </div>
   )
 }

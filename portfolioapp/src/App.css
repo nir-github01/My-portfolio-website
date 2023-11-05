@@ -2,6 +2,7 @@
   width: 100%;
   height: 80px;
   position: fixed;
+  top:0%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,6 +35,120 @@
   font-weight: 700;
   letter-spacing: normal;
 }
+
+/** Home Page  */
+  .parentContainer{
+    width: 100%;
+    height:110vh;
+    margin: 0%;
+    background:linear-gradient(to bottom, rgb(132, 0, 255), rgb(148, 74, 4));
+  }
+.homeContainer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: center;
+  margin-top: 0%;
+  
+}
+.textBox{
+  position: relative;
+  top: 30%;
+  left: 10%;
+  width: 45%;
+}
+.imgBox{
+  cursor: pointer;
+  position: relative;
+  top: 20%;
+  width:25%;
+}
+.myImageclass{
+  width: 200px;
+  height: 300px;
+  border-radius: 20%;
+  margin-right: 40%;
+}
+.btnClass{
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 1vh;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 10px;
+  background: linear-gradient(to right, rgb(212, 119, 13), rgb(0, 89, 255));
+}
+#portfoliobtn:focus-visible, #portfoliobtn:focus-within, #portfoliobtn:focus, #portfoliobtn{
+  outline: none;
+  border: none;
+  border-style: none;
+  border: none;
+  outline-style: none;
+
+}
+#arrowid{
+  margin-top: 5px;
+}
+.heading{
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  line-height: normal;
+}
+.titleclass{
+  font-size: 14px;
+  color: #b8b8b8;
+  margin: 10px;
+  line-height: normal;
+}
+/** Social Links */
+
+ .sociallinksContainer{
+  position: fixed;
+  top: 35%;
+  left: 0%;
+  width: fit-content;
+  height: fit-content;
+ }
+ #linkedIndiv, #githubdiv, #gmaildiv, #resumediv{
+  color: beige;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width:130px;
+  margin: 2px 4px 2px -80px;
+  text-align:justify;
+  border-top-right-radius:1vh;
+  border-bottom-right-radius:1vh;
+  box-shadow: 3px 3px 3px rgb(240, 84, 123);
+  background:radial-gradient(rgb(111, 89, 172), rgb(4, 30, 54));
+ }
+ #linkedInid, #githubid, #gmailid, #profileid{
+   font-size: 24px;
+ }
+ #githubid, #gmailid, #profileid{
+  margin-left: 15px;
+}
+#linkedIndiv:hover, #githubdiv:hover, #gmaildiv:hover, #resumediv:hover{
+  margin: 2px 2px 2px 0px;
+  transition-duration: 800ms;
+  scale: 1;
+}
+
+.socialLinksName{
+  font-size: 14px;
+  display:flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding-right: 10px;
+}
+
 @media (min-width: 768px) {
   .navlinkbox {
     font-size: 16px;
@@ -74,12 +189,13 @@
 }
 
 @media (max-width: 768px) {
+  /** Navigation Bars */
   .navlinkbox {
     display: none;
   }
-  /* .navContainer{
+  .sociallinksContainer{
     display: none;
-  } */
+  }
    .mobileBox{
     position: absolute;
    }
@@ -92,6 +208,7 @@
     padding: 15px;
     color: #ffffff;
     height: 60%;
+    z-index: 10;
     background: linear-gradient(to bottom, #a3540a, rgb(228, 102, 123)) !important;
   }
   .threedivmenu{
@@ -125,6 +242,31 @@
     rotate: 45deg;
     position: relative;
     bottom: 7px;
+  }
+
+
+  /**  Home Page */
+
+  .homeContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    align-content: center;
+    margin-top: 1%;
+    display:flex;
+    row-gap: 5rem;
+    
+  }
+  .textBox{
+    position: relative;
+    top: 10%;
+    width: 45%;
+  }
+  .imgBox{
+    width:25%;
   }
 }
 
