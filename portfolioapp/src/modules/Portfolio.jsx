@@ -4,7 +4,6 @@ const Portfolio = () => {
   let Portfolios = PortfolioList.map((portfolio) => {
     return (
       <div key={portfolio.id} className="cardImg">
-        <p className="titlehead">Check out some of my work right here</p>
         <img
           className="portfolioImg"
           src={portfolio.titleImg}
@@ -23,6 +22,9 @@ const Portfolio = () => {
         <div className="portfolioheading">
           <h1 >Portfolio</h1>
         </div>
+        <div className='portfoliotitle'>
+            <p>Check out some of my work right here</p>
+          </div>
         <div className="card">{Portfolios}</div>
       </div>
     </div>
