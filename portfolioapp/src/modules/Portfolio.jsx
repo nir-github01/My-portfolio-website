@@ -17,8 +17,7 @@ const Portfolio = () => {
     );
   });
   return (
-    <div>
-      <div className="portfolioContatiner">
+      <div id="Portfolio" name="portfolio" className="portfolioContatiner">
         <div className="portfolioheading">
           <h1 >Portfolio</h1>
         </div>
@@ -27,7 +26,6 @@ const Portfolio = () => {
           </div>
         <div className="card">{Portfolios}</div>
       </div>
-    </div>
   );
 };
 

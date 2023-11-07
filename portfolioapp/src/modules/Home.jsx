@@ -6,7 +6,7 @@ import SocialLinks from "./SocialLinks";
 
 const Home = () => {
   return (
-    <div className="parentContainer">
+    <div id="Home" name="home" className="parentContainer">
       <Navbars />
       <SocialLinks />
       <div className="homeContainer">
@@ -18,6 +18,7 @@ const Home = () => {
             React, Tailwind, Next JS and GraphQL.
           </p>
           <div>
+          <a href="#Portfolio" rel="noreferrer">
             <button className="btnClass" id="portfoliobtn">
               Portfolio
               <span>
@@ -25,6 +26,7 @@ const Home = () => {
                 <MdOutlineArrowForwardIos id="arrowid" />
               </span>
             </button>
+            </a>
           </div>
         </div>
         <div className="imgBox col-sm-3">

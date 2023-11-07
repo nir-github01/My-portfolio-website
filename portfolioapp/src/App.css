@@ -325,6 +325,104 @@
     padding: 15px;
     margin: 0px;
   }
+   /** Contacts */
+     .contactContainer{
+      width: max-content;
+      height: max-content;
+     }
+     .contactheading{
+      width: fit-content;
+      height: fit-content;
+      margin: 15px 30px 10px 50px ;
+      color: #a3540a;
+      font-size: 20px;
+      border-bottom:4px rgb(255, 136, 0);
+     }
+     .contactheading h1{
+    
+      border-bottom:4px solid rgb(255, 136, 0);
+     }
+     .captption{
+      font-size: 14px;
+      color: rgb(22, 55, 117);
+      margin:15px 30px 15px 50px;
+       border-bottom: 4px solid rgb(245, 88, 4);
+
+     }
+     .contactcard{
+      position: absolute;
+      left: 15%;
+     }
+     .formCard{
+      margin: 20px;
+      border-radius:2vh;
+      box-shadow:5px 5px 5px 6px rgb(248, 205, 167);
+      /* background: linear-gradient(to top, rgb(247, 198, 115), rgb(87, 87, 145), rgb(240, 193, 113), rgb(87, 87, 145), rgb(240, 193, 113)); */
+     }
+  
+  .form-input {
+    border: 1px solid rgb(118, 130, 238);
+    border-radius: 6px;
+    position: relative;
+    width: 300px;
+    margin: 10px;
+    line-height: 6ex;
+    font-size: 12px;
+    padding: 5px 10px;
+    color:rgb(14, 14, 46);
+    box-shadow:2px 2px 2px 2px  rgb(122, 156, 250);
+  }
+  
+  .form-label {
+    color:rgb(114, 67, 5);
+    z-index: 10;
+    background-color: white;
+    padding: 0 5px;
+  }
+  .form-label-textArea{
+    color:rgb(114, 67, 5);
+    position: absolute;
+    top: 35%;
+    z-index: 1;
+    left: 3em;
+    background-color: white;
+  }
+  #userNamelabelId{
+    position: absolute;
+    top: 2.2ex;
+    left: 3em;
+
+  }
+  #emaillabelId{
+    position: absolute;
+    top: 10ex;
+    z-index: 10;
+    left: 3em;
+    padding: 0 5px;
+  }
+  .text-area{
+    border: 1px solid rgb(118, 130, 238);
+    border-radius: 6px;
+    position: relative;
+    width: 300px;
+    margin: 10px;
+    line-height: 6ex;
+    font-size: 12px;
+    padding: 10px 15px;
+    color:rgb(14, 14, 46);
+    box-shadow:2px 2px 2px 2px  rgb(122, 156, 250);
+  }
+  .formbutton{
+    color: #ffffff;
+    font-size: 14px;
+    width: max-content;
+    height: max-content;
+    border-radius:1vh;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: 4px 4px 4px 4px rgb(167, 138, 86);
+    background: linear-gradient(to left, rgb(155, 66, 7), rgb(231, 168, 50));
+  }
 @media (min-width: 768px) {
   .navlinkbox {
     font-size: 16px;

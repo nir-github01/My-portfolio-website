@@ -1,6 +1,6 @@
 import { navLinks } from "../components/NavLists";
 import { useState, useEffect } from "react";
-// import { Link } from "react-router-dom";
+// import { Link }  from "react-scroll";
 
 const Navbars = () => {
   const [nav, setNavs] = useState(false);
@@ -32,7 +32,8 @@ const Navbars = () => {
   let navLinkList = navLinks.map((link) => {
     return (
       <h4 key={link.id} className={nav ? "mobileviewnavlinks" : "linksclass"}>
-        {link.navlink}
+     <a href={'#' + link.navlink} rel="noreferrer" onClick={()=>setNavs(false)}> {link.navlink}</a>
+        
       </h4>
     );
   });
@@ -61,7 +62,7 @@ const Navbars = () => {
         {nav && (
           <div className="mobileBox">
             {navLinkList}
-            <span> {screenWidth}</span>
+            {/* <span> {screenWidth}</span> */}
           </div>
         )}
       </div>

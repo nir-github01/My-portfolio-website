@@ -4,6 +4,7 @@ const About = () => {
   return (
     <div>
     <div
+    id='About'
       name="about"
       className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
     >
